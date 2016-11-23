@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Суппес](https://up.htmlacademy.ru/adaptive/9/user/45021).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Белов](https://up.htmlacademy.ru/adaptive/9/user/96038).
 
 ---
 
