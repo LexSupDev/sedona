@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона: Форма отзыва</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+  </head>
+  <body>
+
+  <div class="l-center">
+
+    <header class="header">
+      <div class="logo">
+
+      </div>
+      <div class="nav">
+        <p class="nav__button button"></p>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__item-link" href="index.html">Главная</a></li>
+          <li class="nav__item"><a class="nav__item-link" href="gallery.html">Фото и видео</a></li>
+          <li class="nav__item"><a class="nav__item-link" href="form.html">Форма отзыва</a></li>
+          <li class="nav__item"><a class="nav__item-link" href="http://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="content">
+        <div class="intro">
+          <div class="welcome">
+            <img src="img/intro-welcome.svg" alt="Welcome" class="intro__welcome intro__welcome--smal">
+          </div>
+
+          <div class="welcome-article">
+            <h2 class="welcome-article__title title"> Оставьте свой отзыв</h2>
+            <p class="welcome-article__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+          </div>
+        </div>
+
+        <form action="#" class="form">
+          <div class="full-name">
+            <p class="full-name__title title">Представьтесь:</p>
+              <label for="full-name__input--first-name" class="full-name__label">Имя*:<input id="full-name__input--first-name" type="text" class="full-name__input full-name__input--first-name"></label>
+              <label for="full-name__input--last-name" class="full-name__label">Фамилия*:<input id="full-name__input--last-name" type="text" class="full-name__input full-name__input--last-name"></label>
+              <label for="full-name__input--middle-name" class="full-name__label">Отчество:<input id="full-name__input--middle-name" type="text" class="full-name__input full-name__input--middle-name"></label>
+          </div>
+          <div class="contacts">
+            <p class="contacts__title title">Контактная информация:</p>
+            <label for="contacts__input--phone" class="contacts__label">Контактный телефон*:<input id="contacts__input--phone" type="tel" class="contacts__input contacts__input--phone contacts__input--wrong-phone"></label>
+            <label for="contacts__input--email" class="contacts__label">Электронная почта*:<input id="contacts__input--email" type="email" class="contacts__input contacts__input--email"></label>
+          </div>
+          <div class="impressions">
+            <p class="impressions__title title">Ваше общее впечатление</p>
+            <label for="impressions__input--good" class="impressions__label"><input id="impressions__input--good" type="radio" class="impressions__input impressions__input--good">Скорее положительное</label>
+            <label for="impressions__input--bad" class="impressions__label"><input id="impressions__input--bad" type="radio" class="impressions__input impressions__input--bad">Скорее отрицательное</label>
+            <label for="impressions__input--none" class="impressions__label"><input id="impressions__input--none" type="radio" class="impressions__input impressions__input--none">Затрудняюсь ответить</label>
+          </div>
+          <div class="attractions">
+            <p class="attractions__title title">Посещённые достопримечательности:</p>
+            <label for="attractions__input--devil" class="attractions__label"><input id="attractions__input--devil" type="checkbox" class="attractions__input attractions__input--devil">Мост Дьявола</label>
+            <label for="attractions__input--park" class="attractions__label"><input id="attractions__input--park" type="checkbox" class="attractions__input attractions__input--park">Слайд-парк</label>
+            <label for="attractions__input--hill" class="attractions__label"><input id="attractions__input--hill" type="checkbox" class="attractions__input attractions__input--hill">Гора-Колокол</label>
+            <label for="attractions__input--rock" class="attractions__label"><input id="attractions__input--rock" type="checkbox" class="attractions__input attractions__input--rock">Красные скалы</label>
+          </div>
+          <div class="emotions">
+            <label for="emotions__input--txt" class="emotions__label"><span class="emotions__title title">Опишите свои эмоции:</span></label>
+            <input id="emotions__input--txt" type="text" class="emotions__input emotions__input--txt">
+          </div>
+          <p class="submit__button button">Отправить отзыв</p>
+        </form>
+    </div>
+
+    <footer class="footer">
+      <p class="tag-title title">#visitsedona</p>
+      <ul class="social">
+        <li class="social__item"><a href="" class="social__item-link social__item-link--twitter"></a>Мы в Twitter</li>
+        <li class="social__item"><a href="" class="social__item-link social__item-link--facebook"></a>Мы в Facebook</li>
+        <li class="social__item"><a href="" class="social__item-link social__item-link--youtube"></a>Мы на Youtube</li>
+      </ul>
+
+      <div class="copyright">
+        <span class="copyright__text">Разработано</span>
+        <a href="" class="copyright__logo i-htmlacademy"></a>
+      </div>
+    </footer>
+
+  </div>
+
+  </body>
+</html>
