@@ -11,18 +11,16 @@
     <div class="l-center">
 
       <header class="header">
-        <div class="logo">
-
-        </div>
-        <div class="nav">
-          <p class="nav__button button"></p>
-          <ul class="nav__list">
+        <a href="" class="logo__link"><img src="img/logo-mobile.svg" alt="Sedona"></a>
+        <nav class="nav">
+          <span class="nav__button"></span>
+          <ul class="nav__list visually-hidden">
             <li class="nav__item"><a class="nav__item-link" href="index.html">Главная</a></li>
             <li class="nav__item"><a class="nav__item-link" href="gallery.html">Фото и видео</a></li>
             <li class="nav__item"><a class="nav__item-link" href="form.html">Форма отзыва</a></li>
             <li class="nav__item"><a class="nav__item-link" href="http://htmlacademy.ru">HTML Academy</a></li>
           </ul>
-        </div>
+        </nav>
       </header>
 
       <div class="content">
@@ -32,7 +30,7 @@
           </div>
 
           <div class="welcome-article">
-            <h2 class="welcome-article__title title">Фото и видео</h2>
+            <h1 class="title">Фото и видео</h1>
             <p class="welcome-article__desc">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
         </div>
@@ -40,48 +38,54 @@
         <div class="gallery">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <p class="gallery__title title">Неродные просторы</p>
-              <p class="gallery__author">Автор фото: <a href="" class="gallery__author-link">Борис</a></p>
-              <p class="gallery__like-value">1350</p>
+              <img src="http://placehold.it/280x280" alt="" class="galley__img">
+              <h2 class="title">Неродные просторы</h2>
+              <span class="gallery__author">Автор фото: Борис</span>
+              <span class="gallery__like-value">1350</span>
             </li>
             <li class="gallery__item">
-              <p class="gallery__title title">Местная растительность</p>
-              <p class="gallery__author">Автор фото: <a href="" class="gallery__author-link">Сергей</a></p>
-              <p class="gallery__like-value">143</p>
+              <img src="http://placehold.it/280x280" alt="" class="galley__img">
+              <h2 class="title">Местная растительность</h2>
+              <span class="gallery__author">Автор фото: Сергей</span>
+              <span class="gallery__like-value">143</span>
             </li>
             <li class="gallery__item">
-              <p class="gallery__title title">Дорога на север</p>
-              <p class="gallery__author">Автор фото: <a href="" class="gallery__author-link">Петр</a></p>
-              <p class="gallery__like-value">96</p>
+              <img src="http://placehold.it/280x280" alt="" class="galley__img">
+              <h2 class="title">Дорога на север</h2>
+              <span class="gallery__author">Автор фото: Петр</span>
+              <span class="gallery__like-value">96</span>
             </li>
             <li class="gallery__item">
-              <p class="gallery__title title">Мост дьявола</p>
-              <p class="gallery__author">Автор фото: <a href="" class="gallery__author-link">Антон</a></p>
-              <p class="gallery__like-value">254</p>
+              <img src="http://placehold.it/280x280" alt="" class="galley__img">
+              <h2 class="title">Мост дьявола</h2>
+              <span class="gallery__author">Автор фото: Антон</span>
+              <span class="gallery__like-value">254</span>
             </li>
           </ul>
         </div>
 
         <div class="invite">
-          <p class="invite__title title">Всё ещё сомневаетесь?</p>
+          <h2 class="title">Всё ещё сомневаетесь?</h2>
           <p class="invite__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <video class="video" src="#"></video>
-          <div class="video__control visual--hidden">
-            <div class="video__playback-control">
-              <span class="video__playback-control--timeline"></span>
-              <span class="video__playback-control--current-time"></span>
-            </div>
-            <div class="video__additional-playback-control">
-              <span class="video__additional-playback-control--repeat"></span>
-              <span class="video__additional-playback-control--subtitle"></span>
-              <span class="video__additional-playback-control--fullscreen"></span>
+          <div class="video">
+            <video src=""></video>
+            <div class="video__controls">
+              <div class="video__timeline-wrap">
+                <span class="video__timeline"></span>
+                <span class="video__circle"></span>
+              </div>
+              <div class="video__play-controls">
+                <span class="video__control-button video__control-button--repeat"></span>
+                <span class="video__control-button video__control-button--subtitle"></span>
+                <span class="video__control-button video__control-button--fullscreen"></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <footer class="footer">
-        <p class="tag-title title">#visitsedona</p>
+        <p class="tag">#visitsedona</p>
         <ul class="social">
           <li class="social__item"><a href="" class="social__item-link social__item-link--twitter"></a>Мы в Twitter</li>
           <li class="social__item"><a href="" class="social__item-link social__item-link--facebook"></a>Мы в Facebook</li>
@@ -90,7 +94,7 @@
 
         <div class="copyright">
           <span class="copyright__text">Разработано</span>
-          <a href="" class="copyright__logo i-htmlacademy"></a>
+          <a href="http://htmlacademy.ru" class="copyright__item-link copyright__item-link--htmlacademy"></a>
         </div>
       </footer>
 
