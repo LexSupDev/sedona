@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'mixins';
+
+@import 'global/fonts';
+@import 'global/layout';
+@import 'global/base';
+
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/intro';
+@import 'blocks/content';
+@import 'blocks/footer';
+@import 'blocks/form';
