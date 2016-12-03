@@ -1,0 +1,19 @@
+.visually-hidden {
+  display: none;
+}
+
+h1, h2, h3, p {
+  margin: 0px;
+}
+
+body {
+  min-width: 320px;
+  @include uppercase;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 21px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}

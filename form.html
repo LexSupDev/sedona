@@ -2,91 +2,96 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона: Форма отзыва</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <div class="l-center">
+    <div class="site-wrapper">
 
       <header class="header">
-        <a href="" class="logo__link"><img src="img/logo-mobile.svg" alt="Sedona"></a>
         <nav class="nav">
-          <span class="nav__button"></span>
-          <ul class="nav__list visually-hidden">
+          <button class="nav__close-btn"></button>
+          <ul class="nav__list">
             <li class="nav__item"><a class="nav__item-link" href="index.html">Главная</a></li>
             <li class="nav__item"><a class="nav__item-link" href="gallery.html">Фото и видео</a></li>
             <li class="nav__item"><a class="nav__item-link" href="form.html">Форма отзыва</a></li>
             <li class="nav__item"><a class="nav__item-link" href="http://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </nav>
+        <div class="header__row">
+          <a href="" class="logo__link"><img class="logo__img" src="/img/logo-sedona-mobile.svg" alt="Sedona"></a>
+          <button class="nav__toggle"></button>
+        </div>
       </header>
 
       <div class="content">
-          <div class="intro">
-            <div class="welcome">
-              <img src="img/intro-welcome.svg" alt="Welcome" class="intro__welcome intro__welcome--smal">
-            </div>
-
-            <div class="welcome-article">
-              <h1 class="title"> Оставьте свой отзыв</h1>
-              <p class="welcome-article__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
-            </div>
+        <div class="intro">
+          <div class="welcome welcome--smal">
+            <img class="welcome__logo" src="img/text-sedona.svg" alt="Welcome" class="intro__welcome intro__welcome--smal">
           </div>
 
-          <form action="#" class="form">
-            <fieldset class="form__field">
-              <h2 class="title">Представьтесь:</h2>
-              <label for="full-name__input--first-name" class="full-name__label">Имя*:<input id="full-name__input--first-name" type="text" class="full-name__input"></label>
-              <label for="full-name__input--last-name" class="full-name__label">Фамилия*:<input id="full-name__input--last-name" type="text" class="full-name__input"></label>
-              <label for="full-name__input--middle-name" class="full-name__label">Отчество:<input id="full-name__input--middle-name" type="text" class="full-name__input"></label>
-            </fieldset>
-            <fieldset class="cform__field">
-              <h2 class="title">Контактная информация:</h2>
-              <label for="contacts__input--phone" class="contacts__label">Контактный телефон*:<input id="contacts__input--phone" type="tel" class="contacts__input"><p class="error visually-hidden">Ошибка, перепроверьте номер</p></label>
-              <label for="contacts__input--email" class="contacts__label">Электронная почта*:<input id="contacts__input--email" type="email" class="contacts__input"></label>
-            </fieldset>
-            <fieldset class="form__field">
-              <h2 class="title">Ваше общее впечатление</h2>
-              <label for="impressions__input--good" class="impressions__label"><input id="impressions__input--good" type="radio" class="impressions__input">Скорее положительное</label>
-              <label for="impressions__input--bad" class="impressions__label"><input id="impressions__input--bad" type="radio" class="impressions__input">Скорее отрицательное</label>
-              <label for="impressions__input--none" class="impressions__label"><input id="impressions__input--none" type="radio" class="impressions__input">Затрудняюсь ответить</label>
-            </fieldset>
-            <fieldset class="form__field">
-              <h2 class="title">Посещённые достопримечательности:</h2>
-              <label for="attractions__input--devil" class="attractions__label"><input id="attractions__input--devil" type="checkbox" class="attractions__input">Мост Дьявола</label>
-              <label for="attractions__input--park" class="attractions__label"><input id="attractions__input--park" type="checkbox" class="attractions__input">Слайд-парк</label>
-              <label for="attractions__input--hill" class="attractions__label"><input id="attractions__input--hill" type="checkbox" class="attractions__input">Гора-Колокол</label>
-              <label for="attractions__input--rock" class="attractions__label"><input id="attractions__input--rock" type="checkbox" class="attractions__input">Красные скалы</label>
-            </fieldset>
-            <fieldset class="form__field">
-              <label for="emotions__input--txt" class="emotions__label"><h2 class="title">Опишите свои эмоции:</h2></label>
-              <input id="emotions__input--txt" type="text" class="emotions__input">
-            </fieldset>
-            <button class="submit__button button">Отправить отзыв</button>
-          </form>
-
-          <div class="modal visually-hidden">
-            <div class="modal__failure visually-hidden">
-              <h3 class="title">Что-то пошло не так!</h3>
-              <p class="modal_desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-              <button class="modal__button modal__button--failure">OK</button>
-            </div>
-            <div class="modal__success visually-hidden">
-              <h2 class="title">Ваш отзыв отправлен!</h2>
-              <p class="modal_desc">Спасибо за участие, ваш отзыв уже поступил к нам. В ближайщее время мы опубликуем его на сайте.</p>
-              <button class="modal__button modal__button--success">Закрыть окно</button>
-            </div>
+          <div class="welcome-article">
+            <h1 class="welcome-article__title title"> Оставьте свой отзыв</h1>
+            <p class="welcome-article__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
           </div>
+        </div>
+
+        <form action="#" class="form">
+          <fieldset class="form__field">
+            <h2 class="form__title title">Представьтесь:</h2>
+            <label for="full-name__input--first-name" class="full-name__label">Имя*:<input id="full-name__input--first-name" type="text" class="full-name__input"></label>
+            <label for="full-name__input--last-name" class="full-name__label">Фамилия*:<input id="full-name__input--last-name" type="text" class="full-name__input"></label>
+            <label for="full-name__input--middle-name" class="full-name__label">Отчество:<input id="full-name__input--middle-name" type="text" class="full-name__input"></label>
+          </fieldset>
+          <fieldset class="form__field">
+            <h2 class="form__title title">Контактная информация:</h2>
+            <label for="contacts__input--phone" class="contacts__label">Контактный телефон*:<input id="contacts__input--phone" type="tel" class="contacts__input"><p class="error visually-hidden">Ошибка, перепроверьте номер</p></label>
+            <label for="contacts__input--email" class="contacts__label">Электронная почта*:<input id="contacts__input--email" type="email" class="contacts__input"></label>
+          </fieldset>
+          <fieldset class="form__field">
+            <h2 class="form__title title">Ваше общее впечатление</h2>
+            <label for="impressions__input--good" class="impressions__label"><input id="impressions__input--good" type="radio" class="impressions__input">Скорее положительное</label>
+            <label for="impressions__input--bad" class="impressions__label"><input id="impressions__input--bad" type="radio" class="impressions__input">Скорее отрицательное</label>
+            <label for="impressions__input--none" class="impressions__label"><input id="impressions__input--none" type="radio" class="impressions__input">Затрудняюсь ответить</label>
+          </fieldset>
+          <fieldset class="form__field">
+            <h2 class="form__title title">Посещённые достопримечательности:</h2>
+            <label for="attractions__input--devil" class="attractions__label"><input id="attractions__input--devil" type="checkbox" class="attractions__input">Мост Дьявола</label>
+            <label for="attractions__input--park" class="attractions__label"><input id="attractions__input--park" type="checkbox" class="attractions__input">Слайд-парк</label>
+            <label for="attractions__input--hill" class="attractions__label"><input id="attractions__input--hill" type="checkbox" class="attractions__input">Гора-Колокол</label>
+            <label for="attractions__input--rock" class="attractions__label"><input id="attractions__input--rock" type="checkbox" class="attractions__input">Красные скалы</label>
+          </fieldset>
+          <fieldset class="form__field">
+            <label for="emotions__input--txt" class="emotions__label"><h2 class="form__title title">Опишите свои эмоции:</h2></label>
+            <input id="emotions__input--txt" type="text" class="emotions__input">
+          </fieldset>
+          <button class="submit__button button">Отправить отзыв</button>
+        </form>
+
+        <div class="modal visually-hidden">
+          <div class="modal__failure visually-hidden">
+            <h3 class="title">Что-то пошло не так!</h3>
+            <p class="modal_desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="modal__button modal__button--failure">OK</button>
+          </div>
+          <div class="modal__success visually-hidden">
+            <h2 class="title">Ваш отзыв отправлен!</h2>
+            <p class="modal_desc">Спасибо за участие, ваш отзыв уже поступил к нам. В ближайщее время мы опубликуем его на сайте.</p>
+            <button class="modal__button modal__button--success">Закрыть окно</button>
+          </div>
+        </div>
       </div>
 
       <footer class="footer">
         <p class="tag">#visitsedona</p>
         <ul class="social">
-          <li class="social__item"><a href="" class="social__item-link social__item-link--twitter"></a>Мы в Twitter</li>
-          <li class="social__item"><a href="" class="social__item-link social__item-link--facebook"></a>Мы в Facebook</li>
-          <li class="social__item"><a href="" class="social__item-link social__item-link--youtube"></a>Мы на Youtube</li>
+          <li class="social__item"><a href="" class="social__item-link social__item-link--twitter"></a></li>
+          <li class="social__item"><a href="" class="social__item-link social__item-link--facebook"></a></li>
+          <li class="social__item"><a href="" class="social__item-link social__item-link--youtube"></a></li>
         </ul>
 
         <div class="copyright">

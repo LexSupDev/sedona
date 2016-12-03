@@ -1,0 +1,29 @@
+.form__field {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: none;
+  border-top: 1px solid black;
+
+
+  label {
+    font-size: 14px;
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  input {
+    margin-left: 15px;
+  }
+}
+
+.form__title {
+  padding-bottom: 25px;
+}
+
+.form {
+  .l-center {
+    padding: 0;
+  }
+}
