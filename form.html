@@ -41,7 +41,7 @@
         </div>
 
         <form action="#" class="form">
-          <fieldset class="form__field">
+          <fieldset class="form__field form__field--half">
             <h2 class="form__title title">Представьтесь:</h2>
             <label for="full-name__input--first-name" class="full-name__label">Имя*:<input id="full-name__input--first-name" type="text" class="full-name__input"></label>
             <label for="full-name__input--last-name" class="full-name__label">Фамилия*:<input id="full-name__input--last-name" type="text" class="full-name__input"></label>
@@ -52,7 +52,7 @@
             <label for="contacts__input--phone" class="contacts__label">Контактный телефон*:<input id="contacts__input--phone" type="tel" class="contacts__input"><p class="error visually-hidden">Ошибка, перепроверьте номер</p></label>
             <label for="contacts__input--email" class="contacts__label">Электронная почта*:<input id="contacts__input--email" type="email" class="contacts__input"></label>
           </fieldset>
-          <fieldset class="form__field">
+          <fieldset class="form__field form__field--half">
             <h2 class="form__title title">Ваше общее впечатление</h2>
             <label for="impressions__input--good" class="impressions__label"><input id="impressions__input--good" type="radio" class="impressions__input">Скорее положительное</label>
             <label for="impressions__input--bad" class="impressions__label"><input id="impressions__input--bad" type="radio" class="impressions__input">Скорее отрицательное</label>
@@ -60,16 +60,21 @@
           </fieldset>
           <fieldset class="form__field">
             <h2 class="form__title title">Посещённые достопримечательности:</h2>
-            <label for="attractions__input--devil" class="attractions__label"><input id="attractions__input--devil" type="checkbox" class="attractions__input">Мост Дьявола</label>
-            <label for="attractions__input--park" class="attractions__label"><input id="attractions__input--park" type="checkbox" class="attractions__input">Слайд-парк</label>
-            <label for="attractions__input--hill" class="attractions__label"><input id="attractions__input--hill" type="checkbox" class="attractions__input">Гора-Колокол</label>
-            <label for="attractions__input--rock" class="attractions__label"><input id="attractions__input--rock" type="checkbox" class="attractions__input">Красные скалы</label>
+            <div class="attractions__wrap">
+              <label for="attractions__input--devil" class="attractions__label"><input id="attractions__input--devil" type="checkbox" class="attractions__input">Мост Дьявола</label>
+              <label for="attractions__input--park" class="attractions__label"><input id="attractions__input--park" type="checkbox" class="attractions__input">Слайд-парк</label>
+              <label for="attractions__input--hill" class="attractions__label"><input id="attractions__input--hill" type="checkbox" class="attractions__input">Гора-Колокол</label>
+              <label for="attractions__input--rock" class="attractions__label"><input id="attractions__input--rock" type="checkbox" class="attractions__input">Красные скалы</label>
+            </div>
           </fieldset>
           <fieldset class="form__field">
             <label for="emotions__input--txt" class="emotions__label"><h2 class="form__title title">Опишите свои эмоции:</h2></label>
             <input id="emotions__input--txt" type="text" class="emotions__input">
           </fieldset>
-          <button class="submit__button button">Отправить отзыв</button>
+          <div class="form__service">
+            <button class="submit__button button">Отправить отзыв</button>
+            <span class="form__footnote">* - обязательные поля</span>
+          </div>
         </form>
 
         <div class="modal visually-hidden">
