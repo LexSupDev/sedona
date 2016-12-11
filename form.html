@@ -31,7 +31,7 @@
       <div class="content">
         <div class="intro">
           <div class="welcome welcome--smal">
-            <img class="welcome__logo" src="img/text-sedona.svg" alt="Welcome" class="intro__welcome intro__welcome--smal">
+            <img class="welcome__logo welcome__logo--smal" src="img/text-sedona.svg" alt="Welcome">
           </div>
 
           <div class="welcome-article">
@@ -49,8 +49,10 @@
           </fieldset>
           <fieldset class="form__field">
             <h2 class="form__title title">Контактная информация:</h2>
-            <label for="contacts__input--phone" class="contacts__label">Контактный телефон*:<input id="contacts__input--phone" type="tel" class="contacts__input"><p class="error visually-hidden">Ошибка, перепроверьте номер</p></label>
-            <label for="contacts__input--email" class="contacts__label">Электронная почта*:<input id="contacts__input--email" type="email" class="contacts__input"></label>
+            <div class="contacts__wrap">
+              <label for="contacts__input--phone" class="contacts__label">Контактный телефон*:<input id="contacts__input--phone" type="tel" class="contacts__input"><p class="error">Ошибка, перепроверьте номер</p></label>
+              <label for="contacts__input--email" class="contacts__label">Электронная почта*:<input id="contacts__input--email" type="email" class="contacts__input"></label>
+            </div>
           </fieldset>
           <fieldset class="form__field form__field--half">
             <h2 class="form__title title">Ваше общее впечатление</h2>

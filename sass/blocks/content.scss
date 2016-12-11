@@ -226,3 +226,24 @@
     display: flex;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    width: 100%;
+    padding: 0;
+  }
+
+  .gallery__item {
+    position: relative;
+    width: 33.3333333%;
+  }
+
+  .gallery__desc {
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.3);
+  }
+}
