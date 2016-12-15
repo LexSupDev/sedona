@@ -8,16 +8,17 @@
 
 .nav__item {
   @include no-style;
-  padding: 21px 0px 21px 0px;
+  padding: 15px 0px 15px 0px;
   background: #81b3d2;
+  box-sizing: border-box;
 }
 
 .nav__item-link {
   @include no-style;
   color: white;
-  font-size: 18px;
-  line-height: 26px;
   font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .logo__link {
@@ -49,4 +50,50 @@
   float: right;
   margin-top: 14px;
   margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .logo__img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 102px;
+    height: 82px;
+  }
+
+  .header__row {
+    position: static;
+    min-height: auto;
+  }
+
+  .nav__list {
+    font-size: 0;
+  }
+
+  .nav__item {
+    display: inline-block;
+    width: 20%;
+    background: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    &:nth-child(4n+2) {
+      margin-right: 20%;
+    }
+  }
+
+  .nav__item-link {
+    font-size: 14px;
+    line-height: 26px;
+    color: black;
+  }
+
+  .nav__close-btn {
+    display: none;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
 }

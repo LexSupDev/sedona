@@ -6,3 +6,11 @@
 @mixin uppercase {
   text-transform: uppercase;
 }
+
+@mixin before-elem {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 77px;
+  height: 75px;
+}
