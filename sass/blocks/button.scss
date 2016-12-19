@@ -4,8 +4,15 @@
   border: none;
   box-sizing: border-box;
   font-size: 21px;
-  font-weight: bold;
-  padding: 17px 125px;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 17px 30px;
   color: white;
   background-color: #81b3d2;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    padding: 17px 125px;
+  }
 }
