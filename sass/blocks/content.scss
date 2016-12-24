@@ -4,7 +4,7 @@
 }
 
 .welcome {
-  background: url("/img/bg-back-mobile@1x.jpg") no-repeat;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   -webkit-background-size: cover;
   background-size: cover;
   height: 389px;
@@ -196,12 +196,23 @@
   overflow: hidden;
 }
 
+.feature-img__item {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 768px) {
   .welcome {
     min-height: 518px;
 
     &--smal {
       min-height: 291px;
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx)
+    {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1338px auto;
     }
   }
 
@@ -240,8 +251,8 @@
   }
 
   .feature__title {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .feature-img {

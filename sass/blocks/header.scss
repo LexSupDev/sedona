@@ -97,3 +97,10 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .logo__img {
+    width: 193px;
+    height: 96px;
+  }
+}
