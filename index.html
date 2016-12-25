@@ -41,7 +41,7 @@
       <div class="content">
         <div class="intro">
           <div class="welcome">
-            <img class="welcome__logo" src="img/text-sedona-index.svg" alt="Welcome">
+            <img class="welcome__logo" src="img/text-sedona-index.svg" alt="Welcome" width="280px" height="210px">
           </div>
 
           <div class="welcome-article">
@@ -83,23 +83,25 @@
               <p class="additional-feature__desc">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
             </div>
           </div>
-          <div class="feature__item feature__item--blue">
-            <h2 class="feature__title title">Там есть мост дьявола</h2>
-            <span class="feature__number">№2</span>
-            <p class="feature__desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          </div>
-          <div class="feature-img">
-            <picture>
-              <source
-                media="(min-width: 1200px)"
-                srcset="../img/photo-bridge@1x.jpg 1x,
-                        ../img/photo-bridge@2x.jpg 2x">
-              <source
-                media="(min-width: 768px)"
-                srcset="../img/photo-bridge-tablet@1x.jpg 1x,
-                        ../img/photo-bridge-tablet@2x.jpg 2x">
-              <img src="../img/photo-bridge-mobile@1x.jpg" alt="Sedona bridge" class="feature-img__item" srcset="../img/photo-bridge-mobile@2x.jpg 2x">
-            </picture>
+          <div class="order-reverse__wrap">
+            <div class="feature__item feature__item--blue order-reverse__item">
+              <h2 class="feature__title title">Там есть мост дьявола</h2>
+              <span class="feature__number">№2</span>
+              <p class="feature__desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="feature-img order-reverse__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="../img/photo-bridge@1x.jpg 1x,
+                          ../img/photo-bridge@2x.jpg 2x">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../img/photo-bridge-tablet@1x.jpg 1x,
+                          ../img/photo-bridge-tablet@2x.jpg 2x">
+                <img src="../img/photo-bridge-mobile@1x.jpg" alt="Sedona bridge" class="feature-img__item" srcset="../img/photo-bridge-mobile@2x.jpg 2x">
+              </picture>
+            </div>
           </div>
           <div class="feature__item feature__item--gray">
             <h2 class="feature__title title">Небольшая площадь</h2>
@@ -120,7 +122,7 @@
 
         <div class="invite">
           <h2 class="invite__title title">Заинтересовались?</h2>
-          <p class="invite__desc">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="invite__desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="invite__button button">Найти гостиницу</button>
         </div>
       </div>
@@ -132,14 +134,20 @@
       <footer class="footer">
         <p class="tag">#visitsedona</p>
         <ul class="social">
-          <li class="social__item"><a href="#" class="social__item-link social__item-link--twitter"></a></li>
-          <li class="social__item"><a href="#" class="social__item-link social__item-link--facebook"></a></li>
-          <li class="social__item"><a href="#" class="social__item-link social__item-link--youtube"></a></li>
+          <li class="social__item">
+            <a href="#" class="social__item-link"><svg class="social__item-link--twitter"><use xlink:href="../img/icon-twitter.svg#icon-twitter"/><svg></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__item-link"><svg class="social__item-link--facebook"><use xlink:href="../img/icon-facebook.svg#icon-facebook"/></svg></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__item-link"><svg class="social__item-link--youtube"><use xlink:href="../img/icon-youtube.svg#icon-youtube"/></svg></a>
+          </li>
         </ul>
 
         <div class="copyright">
           <span class="copyright__text">Разработано</span>
-          <a href="#" class="copyright__item-link copyright__item-link--htmlacademy"></a>
+          <a href="#"><svg class="copyright__item-link copyright__item-link--htmlacademy"><use xlink:href="../img/logo-htmlacademy.svg.svg#logo-htmlacademy.svg"/></svg></a>
         </div>
       </footer>
 
