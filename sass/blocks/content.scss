@@ -93,7 +93,7 @@
       height: 38px;
       width: 38px;
       left: 20px;
-      top: 25px;
+      top: 30px;
       background: url("/img/icon-house.svg") no-repeat;
       background-size: cover;
     }
@@ -102,10 +102,10 @@
   &--souvenir {
     &:before {
       @include before-elem;
-      height: 46px;
-      width: 39px;
+      height: 38px;
+      width: 32px;
       left: 20px;
-      top: 25px;
+      top: 30px;
       background: url("/img/icon-gift.svg") no-repeat;
       background-size: cover;
     }
@@ -114,12 +114,12 @@
   &--food {
     &:before {
       @include before-elem;
-      height: 39px;
-      width: 42px;
+      height: 35px;
+      width: 40px;
       left: 20px;
-      top: 30px;
+      top: 35px;
       background: url("/img/icon-burger.svg") no-repeat;
-      background-size: cover;
+      background-size: contain;
     }
   }
 }
