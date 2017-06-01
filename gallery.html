@@ -23,7 +23,11 @@
           </ul>
         </nav>
         <div class="header__row">
-          <a href="" class="logo__link"><img class="logo__img" src="/img/logo-sedona-mobile.svg" alt="Sedona"></a>
+          <picture >
+            <source media="(min-width: 1200px)" srcset="../img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="../img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="102" height="83" class="logo__img" alt="Sedona">
+          </picture>
           <button class="nav__toggle"></button>
         </div>
       </header>
@@ -31,7 +35,7 @@
       <div class="content">
         <div class="intro">
           <div class="welcome welcome--smal">
-            <img class="welcome__logo welcome__logo--smal" src="img/text-sedona.svg" alt="Welcome">
+            <img class="welcome__logo" src="img/text-sedona.svg" alt="Welcome" width="280px" height="210px">
           </div>
 
           <div class="welcome-article welcome-article--custom-pd">
@@ -43,7 +47,17 @@
         <div class="gallery">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img src="http://placehold.it/1200x400" alt="" class="gallery__img gallery__img--big">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="../img/photo-1-desktop@1x.jpg 1x,
+                          ../img/photo-1-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../img/photo-1-tablet@1x.jpg 1x,
+                          ../img/photo-1-tablet@2x.jpg 2x">
+                <img src="../img/photo-1-mobile@1x.jpg" alt="" class="gallery__img gallery__img--big" srcset="../img/photo-1-mobile@2x.jpg 2x">
+              </picture>
               <div class="gallery__desc">
                 <div class="gallery__left-row">
                   <h2 class="gallery__title title">Неродные просторы</h2>
@@ -56,7 +70,17 @@
               </div>
             </li>
             <li class="gallery__item">
-              <img src="http://placehold.it/400x268" alt="" class="gallery__img">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="../img/photo-2-desktop@1x.jpg 1x,
+                          ../img/photo-2-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../img/photo-2-tablet@1x.jpg 1x,
+                          ../img/photo-2-tablet@2x.jpg 2x">
+                <img src="../img/photo-2-mobile@1x.jpg" alt="" class="gallery__img gallery__img--big" srcset="../img/photo-2-mobile@2x.jpg 2x">
+              </picture>
               <div class="gallery__desc">
                 <div class="gallery__left-row">
                   <h2 class="gallery__title title">Местная растительность</h2>
@@ -69,7 +93,17 @@
               </div>
             </li>
             <li class="gallery__item">
-              <img src="http://placehold.it/400x268" alt="" class="gallery__img">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="../img/photo-3-desktop@1x.jpg 1x,
+                          ../img/photo-3-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../img/photo-3-tablet@1x.jpg 1x,
+                          ../img/photo-3-tablet@2x.jpg 2x">
+                <img src="../img/photo-3-mobile@1x.jpg" alt="" class="gallery__img gallery__img--big" srcset="../img/photo-3-mobile@2x.jpg 2x">
+              </picture>
               <div class="gallery__desc">
                 <div class="gallery__left-row">
                   <h2 class="gallery__title title">Дорога на север</h2>
@@ -82,7 +116,17 @@
               </div>
             </li>
             <li class="gallery__item">
-              <img src="http://placehold.it/400x268" alt="" class="gallery__img">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="../img/photo-4-desktop@1x.jpg 1x,
+                          ../img/photo-4-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../img/photo-4-tablet@1x.jpg 1x,
+                          ../img/photo-4-tablet@2x.jpg 2x">
+                <img src="../img/photo-4-mobile@1x.jpg" alt="" class="gallery__img gallery__img--big" srcset="../img/photo-4-mobile@2x.jpg 2x">
+              </picture>
               <div class="gallery__desc">
                 <div class="gallery__left-row">
                   <h2 class="gallery__title title">Мост дьявола</h2>
@@ -120,14 +164,20 @@
       <footer class="footer">
         <p class="tag">#visitsedona</p>
         <ul class="social">
-          <li class="social__item"><a href="" class="social__item-link social__item-link--twitter"></a></li>
-          <li class="social__item"><a href="" class="social__item-link social__item-link--facebook"></a></li>
-          <li class="social__item"><a href="" class="social__item-link social__item-link--youtube"></a></li>
+          <li class="social__item">
+            <a href="#" class="social__item-link"><svg class="social__item-link--twitter"><use xlink:href="../img/icon-twitter.svg#icon-twitter"/><svg></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__item-link"><svg class="social__item-link--facebook"><use xlink:href="../img/icon-facebook.svg#icon-facebook"/></svg></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__item-link"><svg class="social__item-link--youtube"><use xlink:href="../img/icon-youtube.svg#icon-youtube"/></svg></a>
+          </li>
         </ul>
 
         <div class="copyright">
           <span class="copyright__text">Разработано</span>
-          <a href="http://htmlacademy.ru" class="copyright__item-link copyright__item-link--htmlacademy"></a>
+          <a href="#"><svg class="copyright__item-link copyright__item-link--htmlacademy"><use xlink:href="../img/logo-htmlacademy.svg.svg#logo-htmlacademy.svg"/></svg></a>
         </div>
       </footer>
 

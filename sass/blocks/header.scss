@@ -8,12 +8,14 @@
 
 .nav__item {
   @include no-style;
-  padding: 15px 0px 15px 0px;
   background: #81b3d2;
   box-sizing: border-box;
+  box-shadow: inset 0 1px 0 0 #9ac2db,inset 0 -1px 0 0 #678fa8;
 }
 
 .nav__item-link {
+  display: block;
+  padding: 15px 0px 15px 0px;
   @include no-style;
   color: white;
   font-weight: bold;
@@ -44,6 +46,7 @@
 .header__row {
   position: relative;
   min-height: 56px;
+  background-color: #fff;
 }
 
 .nav__toggle {
@@ -53,6 +56,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .nav {
+    background-color: #fff;
+  }
 
   .logo__img {
     position: absolute;
@@ -75,8 +81,7 @@
     display: inline-block;
     width: 20%;
     background: none;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    box-shadow: none;
 
     &:nth-child(4n+2) {
       margin-right: 20%;
@@ -84,6 +89,8 @@
   }
 
   .nav__item-link {
+    padding-top: 14px;
+    padding-bottom: 14px;
     font-size: 14px;
     line-height: 26px;
     color: black;
@@ -95,5 +102,12 @@
 
   .nav__toggle {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__img {
+    width: 193px;
+    height: 96px;
   }
 }
