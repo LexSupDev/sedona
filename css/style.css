@@ -382,9 +382,6 @@ ul {
     padding-bottom: 45px; }
   .feature__item--gray:after {
     display: none; }
-  .feature__title {
-    padding-left: 50px;
-    padding-right: 50px; }
   .feature-img {
     width: 66.6666666666%; }
   .feature__number {
